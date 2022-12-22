@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useNavigate, useParams, Link } from 'react-router-dom'
+import DashboardPage from './DashboardPage'
 
 // 1. get id from params(useParams())
 // 2. use the id to get info from api : axios
@@ -160,7 +161,7 @@ const AccountUpdatePage = () => {
             <label className="form-label">Is Paid Off</label>
           </div>
           <button className="btn btn-success update_label" type="submit">Update Account</button>
-          <button type="submit" className="btn btn-secondary update_label" onClick={clearForm}>Cancel</button>
+          <button type="submit" className="btn btn-secondary update_label" onClick={DashboardPage.jsx}>Cancel</button>
         </form >
         {errors.map((err, index) => <p key={index} style={{ color: "blue" }}>{err}</p>)}
       </div >

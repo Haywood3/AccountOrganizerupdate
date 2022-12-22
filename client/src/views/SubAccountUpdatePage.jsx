@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate, Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 import { Paper, Card, CardContent } from '@material-ui/core'
+import DashboardPage from './DashboardPage'
 
 const SubAccountUpdatePage = () => {
   const navigate = useNavigate()
@@ -100,7 +101,7 @@ const SubAccountUpdatePage = () => {
                   <label className="form-label">Recuring</label>
                 </div>
                 <button type="submit" className="btn btn-success" >Update Subscription</button>
-                <button type="submit" className="btn btn-secondary" onClick={clearForm}>Cancel</button>
+                <button type="submit" className="btn btn-secondary" onClick={DashboardPage.jsx}>Cancel</button>
               </form >
               {errors.map((err, index) => <p key={index} style={{ color: "blue" }}>{err}</p>)}
             </CardContent>
