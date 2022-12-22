@@ -78,7 +78,7 @@ const DashboardPage = () => {
   return (
     <div className="color">
       <div>
-        <h2 className="header">Account Lists</h2>
+        <h2 className="header">Account Organizer</h2>
       </div>
       <div className="d-flex">
         <h5 className="subheader">Expense Accounts</h5>
